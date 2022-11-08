@@ -53,6 +53,12 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 -- keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
 -- keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
+-- DiffView
+keymap.set("n", "<leader>gg", ":DiffviewOpen<CR>")
+keymap.set("n", "<leader>gc", ":DiffviewClose<CR>")
+keymap.set("n", "<leader>gt", ":DiffviewToggleFiles<CR>")
+keymap.set("n", "<leader>gr", ":DiffviewRefresh<CR>")
+
 -- Vimspector
 vim.cmd([[
 nmap <F9> <cmd>call vimspector#Launch()<cr>
