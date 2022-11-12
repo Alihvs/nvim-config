@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -220,6 +225,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["typescript.nvim"] = {
     loaded = true,
