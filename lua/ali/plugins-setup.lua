@@ -103,7 +103,6 @@ return packer.startup(function(use)
 
 	-- rust related plugins
 	use("simrat39/rust-tools.nvim")
-	use("puremourning/vimspector")
 
 	-- DiffView
 	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })

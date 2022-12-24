@@ -261,11 +261,6 @@ _G.packer_plugins = {
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
   },
-  vimspector = {
-    loaded = true,
-    path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/vimspector",
-    url = "https://github.com/puremourning/vimspector"
-  },
   ["vscode.nvim"] = {
     loaded = true,
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/vscode.nvim",
