@@ -107,11 +107,8 @@ return packer.startup(function(use)
 	-- DiffView
 	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 
-	--VimBeGood
+	-- VimBeGood
 	use("ThePrimeagen/vim-be-good")
-
-	-- Terminal
-	use("akinsho/toggleterm.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()

@@ -15,9 +15,22 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
--- increment/decrement numbers
-keymap.set("n", "<leader>+", "<C-a>") -- increment
-keymap.set("n", "<leader>-", "<C-x>") -- decrement
+-- Move lines of code in visual mode up and down
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- Keep the cursor at the middle of screen when jumping half page up or down
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- Keep search terms in the middle
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
+
+-- Use leader + y to put stuff inside the system clipboard
+-- keymap.set("n", "<leader>y", '"+y')
+-- keymap.set("v", "<leader>y", '"+y')
+-- keymap.set("n", "<leader>Y", '"+Y')
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
