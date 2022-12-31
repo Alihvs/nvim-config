@@ -34,6 +34,7 @@ treesitter.setup({
 		"gitignore",
 		"rust",
 		"toml",
+		"go",
 	},
 	rainbow = {
 		enable = true,
