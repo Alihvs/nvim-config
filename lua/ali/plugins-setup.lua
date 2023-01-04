@@ -103,9 +103,11 @@ return packer.startup(function(use)
 
 	-- rust related plugins
 	use("simrat39/rust-tools.nvim")
+	use("mfussenegger/nvim-dap")
 
-	-- DiffView
+	-- git related plugins
 	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
+	use({ "f-person/git-blame.nvim" })
 
 	-- VimBeGood
 	use("ThePrimeagen/vim-be-good")

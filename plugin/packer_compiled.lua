@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["git-blame.nvim"] = {
+    loaded = true,
+    path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
+    url = "https://github.com/f-person/git-blame.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -173,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
