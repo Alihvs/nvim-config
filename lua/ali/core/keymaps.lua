@@ -27,6 +27,8 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
 
+keymap.set("n", "DD", '"_dd"')
+
 -- Use leader + y to put stuff inside the system clipboard
 -- keymap.set("n", "<leader>y", '"+y')
 -- keymap.set("v", "<leader>y", '"+y')
