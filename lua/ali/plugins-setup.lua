@@ -109,7 +109,9 @@ return packer.startup(function(use)
 	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 	use({ "f-person/git-blame.nvim" })
 
-	-- VimBeGood
+	use("ahmedkhalf/project.nvim")
+
+	-- Games
 	use("ThePrimeagen/vim-be-good")
 
 	if packer_bootstrap then

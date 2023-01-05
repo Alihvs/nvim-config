@@ -60,6 +60,9 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string u
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
+-- Project
+keymap.set("n", "<leader>fp", "<cmd>Telescope projects<cr>")
+
 -- DiffView
 keymap.set("n", "<leader>gg", ":DiffviewOpen<CR>")
 keymap.set("n", "<leader>gc", ":DiffviewClose<CR>")
