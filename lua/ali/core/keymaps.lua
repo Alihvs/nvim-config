@@ -9,6 +9,14 @@ local keymap = vim.keymap
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
+-- use <leader>s to save all files
+keymap.set("n", "<leader>s", ":w<CR>")
+keymap.set("n", "<leader>S", ":wa<CR>")
+
+-- quit the editor with <leader>Q
+keymap.set("n", "<leader>q", ":q<CR>")
+keymap.set("n", "<leader>Q", ":qa<CR>")
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
