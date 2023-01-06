@@ -10,8 +10,8 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>")
 
 -- use <leader>s to save all files
-keymap.set("n", "<leader>s", ":w<CR>")
-keymap.set("n", "<leader>S", ":wa<CR>")
+keymap.set("n", "<leader>w", ":w<CR>")
+keymap.set("n", "<leader>W", ":wa<CR>")
 
 -- quit the editor with <leader>Q
 keymap.set("n", "<leader>q", ":q<CR>")

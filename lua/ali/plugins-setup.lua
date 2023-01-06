@@ -54,6 +54,9 @@ return packer.startup(function(use)
 	-- vs-code like icons
 	use("kyazdani42/nvim-web-devicons")
 
+	-- tab manager
+	use({ "romgrk/barbar.nvim", wants = "nvim-web-devicons" })
+
 	-- statusline
 	use("nvim-lualine/lualine.nvim")
 
@@ -109,7 +112,11 @@ return packer.startup(function(use)
 	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 	use({ "f-person/git-blame.nvim" })
 
+	-- project management
 	use("ahmedkhalf/project.nvim")
+
+	-- quality of life plugins
+	use("lukas-reineke/indent-blankline.nvim")
 
 	-- Games
 	use("ThePrimeagen/vim-be-good")
