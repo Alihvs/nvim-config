@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
+local opts = { noremap = true, silent = true }
 
 ---------------------
 -- General Keymaps
@@ -76,3 +77,18 @@ keymap.set("n", "<leader>fp", "<cmd>Telescope projects<cr>")
 -- DiffView
 keymap.set("n", "<leader>gg", ":DiffviewOpen<CR>")
 keymap.set("n", "<leader>gc", ":DiffviewClose<CR>")
+
+-- barbar
+keymap.set("n", "<C-m>", "<Cmd>BufferPick<CR>", opts)
+keymap.set("n", "<C-p>", "<Cmd>BufferPin<CR>", opts)
+keymap.set("n", "<C-w>", "<Cmd>BufferClose<CR>", opts)
+keymap.set("n", "<leader>1", "<Cmd>BufferGoto 1<CR>", opts)
+keymap.set("n", "<leader>2", "<Cmd>BufferGoto 2<CR>", opts)
+keymap.set("n", "<leader>4", "<Cmd>BufferGoto 4<CR>", opts)
+keymap.set("n", "<leader>4", "<Cmd>BufferGoto 4<CR>", opts)
+keymap.set("n", "<leader>5", "<Cmd>BufferGoto 5<CR>", opts)
+keymap.set("n", "<leader>6", "<Cmd>BufferGoto 6<CR>", opts)
+keymap.set("n", "<leader>7", "<Cmd>BufferGoto 7<CR>", opts)
+keymap.set("n", "<leader>8", "<Cmd>BufferGoto 8<CR>", opts)
+keymap.set("n", "<leader>9", "<Cmd>BufferGoto 9<CR>", opts)
+keymap.set("n", "<leader>0", "<Cmd>BufferGoto 0<CR>", opts)
