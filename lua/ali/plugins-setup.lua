@@ -54,9 +54,6 @@ return packer.startup(function(use)
 	-- vs-code like icons
 	use("kyazdani42/nvim-web-devicons")
 
-	-- tab manager
-	use({ "romgrk/barbar.nvim", wants = "nvim-web-devicons" })
-
 	-- statusline
 	use("nvim-lualine/lualine.nvim")
 
@@ -100,7 +97,6 @@ return packer.startup(function(use)
 	-- auto closing & inserting pairs
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
-	use("tpope/vim-surround")
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
@@ -112,9 +108,6 @@ return packer.startup(function(use)
 	-- git related plugins
 	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 	use({ "f-person/git-blame.nvim" })
-
-	-- project management
-	use("ahmedkhalf/project.nvim")
 
 	-- quality of life plugins
 	use("lukas-reineke/indent-blankline.nvim")

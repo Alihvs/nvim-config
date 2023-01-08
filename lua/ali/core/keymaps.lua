@@ -10,14 +10,6 @@ local opts = { noremap = true, silent = true }
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
--- use <leader>s to save all files
-keymap.set("n", "<leader>w", ":w<CR>")
-keymap.set("n", "<leader>W", ":wa<CR>")
-
--- quit the editor with <leader>Q
-keymap.set("n", "<leader>q", ":q<CR>")
-keymap.set("n", "<leader>Q", ":qa<CR>")
-
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
@@ -71,24 +63,6 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string u
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
--- Project
-keymap.set("n", "<leader>fp", "<cmd>Telescope projects<cr>")
-
 -- DiffView
 keymap.set("n", "<leader>gg", ":DiffviewOpen<CR>")
 keymap.set("n", "<leader>gc", ":DiffviewClose<CR>")
-
--- barbar
-keymap.set("n", "<C-m>", "<Cmd>BufferPick<CR>", opts)
-keymap.set("n", "<C-p>", "<Cmd>BufferPin<CR>", opts)
-keymap.set("n", "<C-w>", "<Cmd>BufferClose<CR>", opts)
-keymap.set("n", "<leader>1", "<Cmd>BufferGoto 1<CR>", opts)
-keymap.set("n", "<leader>2", "<Cmd>BufferGoto 2<CR>", opts)
-keymap.set("n", "<leader>4", "<Cmd>BufferGoto 4<CR>", opts)
-keymap.set("n", "<leader>4", "<Cmd>BufferGoto 4<CR>", opts)
-keymap.set("n", "<leader>5", "<Cmd>BufferGoto 5<CR>", opts)
-keymap.set("n", "<leader>6", "<Cmd>BufferGoto 6<CR>", opts)
-keymap.set("n", "<leader>7", "<Cmd>BufferGoto 7<CR>", opts)
-keymap.set("n", "<leader>8", "<Cmd>BufferGoto 8<CR>", opts)
-keymap.set("n", "<leader>9", "<Cmd>BufferGoto 9<CR>", opts)
-keymap.set("n", "<leader>0", "<Cmd>BufferGoto 0<CR>", opts)
