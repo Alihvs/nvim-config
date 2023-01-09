@@ -34,6 +34,7 @@ lualine.setup({
 		theme = lualine_nightfly,
 		-- theme = "vscode",
 		-- theme = "gruvbox",
+		disabled_filetypes = { "packer", "NvimTree" },
 	},
 	sections = {
 		lualine_a = {
