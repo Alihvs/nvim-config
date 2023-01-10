@@ -67,3 +67,12 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available 
 -- DiffView
 keymap.set("n", "<leader>gg", ":DiffviewOpen<CR>")
 keymap.set("n", "<leader>gc", ":DiffviewClose<CR>")
+
+-- Harpoon
+keymap.set("n", "<leader>hh", ":lua require('harpoon.ui').toggle_quick_menu()<CR>")
+keymap.set("n", "<leader>ha", ":lua require('harpoon.mark').add_file()<CR>")
+keymap.set("n", "<C-n>", ":lua require('harpoon.ui').nav_next()<CR>")
+keymap.set("n", "<C-p>", ":lua require('harpoon.ui').nav_prev()<CR>")
+keymap.set("n", "<leader>1", ":lua require('harpoon.ui').nav_file(1)<CR>")
+keymap.set("n", "<leader>2", ":lua require('harpoon.ui').nav_file(2)<CR>")
+keymap.set("n", "<leader>3", ":lua require('harpoon.ui').nav_file(3)<CR>")
