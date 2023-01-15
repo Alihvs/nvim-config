@@ -34,8 +34,9 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-	use("Mofiqul/vscode.nvim") -- vscode coloerscheme
-	use("ellisonleao/gruvbox.nvim")
+	-- use("Mofiqul/vscode.nvim") -- vscode coloerscheme
+	-- use("ellisonleao/gruvbox.nvim")
+	-- use("olimorris/onedarkpro.nvim")
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
@@ -106,7 +107,12 @@ return packer.startup(function(use)
 
 	-- rust related plugins
 	use("simrat39/rust-tools.nvim")
+
+	-- debugging
 	use("mfussenegger/nvim-dap")
+	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
+	use("leoluz/nvim-dap-go")
+	use("theHamsta/nvim-dap-virtual-text")
 
 	-- git related plugins
 	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })

@@ -27,3 +27,6 @@ opt.signcolumn = "yes"
 
 -- backspace
 opt.backspace = "indent,eol,start"
+
+-- share clipboard with os
+opt.clipboard = "unnamed"
