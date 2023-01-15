@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
-local opts = { noremap = true, silent = true }
+-- local opts = { noremap = true, silent = true }
 
 ---------------------
 -- General Keymaps
