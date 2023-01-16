@@ -54,8 +54,7 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 keymap.set("n", "<leder>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>") -- focus file explorer
-keymap.set("n", "<leader>x", ":NvimTreeClose<CR>") -- focus file explorer
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- focus file explorer
 
 -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
@@ -86,3 +85,19 @@ keymap.set("n", "<F8>", ":lua require('dap').step_out()<CR>")
 keymap.set("n", "<leader>b", ":lua require('dap').toggle_breakpoint()<CR>")
 keymap.set("n", "<leader>B", ":lua require('dap').set_breakpoint(vim.fn.input('Breakpoint Condition: '))<CR>")
 keymap.set("n", "<leader>dt", ":lua require('dap-go').debug_test()<CR>")
+
+-- toggleterm
+keymap.set("n", "<leader>tt", "<cmd>ToggleTerm direction=float<CR>")
+keymap.set("n", "<leader>tv", "<cmd>ToggleTerm size=60 direction=vertical<CR>")
+keymap.set("n", "<leader>th", "<cmd>ToggleTerm size=20 direction=horizontal<CR>")
+function _G.set_terminal_keymaps()
+	local opts = { buffer = 0 }
+	keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
+	keymap.set("t", "jk", [[<C-\><C-n>]], opts)
+	keymap.set("t", "<C-h>", [[<Cmd>wincmd h<CR>]], opts)
+	keymap.set("t", "<C-j>", [[<Cmd>wincmd j<CR>]], opts)
+	keymap.set("t", "<C-k>", [[<Cmd>wincmd k<CR>]], opts)
+	keymap.set("t", "<C-l>", [[<Cmd>wincmd l<CR>]], opts)
+end
+
+vim.cmd("autocmd! TermOpen term://*toggleterm#* lua set_terminal_keymaps()")

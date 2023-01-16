@@ -49,6 +49,9 @@ return packer.startup(function(use)
 	-- commenting with gc
 	use("numToStr/Comment.nvim")
 
+	-- teminal
+	use({ "akinsho/toggleterm.nvim", tag = "*" })
+
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
 
