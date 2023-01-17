@@ -92,12 +92,12 @@ keymap.set("n", "<leader>tv", "<cmd>ToggleTerm size=60 direction=vertical<CR>")
 keymap.set("n", "<leader>th", "<cmd>ToggleTerm size=20 direction=horizontal<CR>")
 function _G.set_terminal_keymaps()
 	local opts = { buffer = 0 }
-	keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
+	-- keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
+	keymap.set("t", "<esc>", "<cmd>ToggleTerm<CR>", opts)
 	keymap.set("t", "jk", [[<C-\><C-n>]], opts)
 	keymap.set("t", "<C-h>", [[<Cmd>wincmd h<CR>]], opts)
 	keymap.set("t", "<C-j>", [[<Cmd>wincmd j<CR>]], opts)
 	keymap.set("t", "<C-k>", [[<Cmd>wincmd k<CR>]], opts)
 	keymap.set("t", "<C-l>", [[<Cmd>wincmd l<CR>]], opts)
 end
-
 vim.cmd("autocmd! TermOpen term://*toggleterm#* lua set_terminal_keymaps()")
