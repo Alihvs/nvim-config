@@ -24,6 +24,5 @@ require("ali.plugins.harpoon")
 require("ali.plugins.nvim-dap-ui")
 require("ali.plugins.nvim-dap-go")
 require("ali.plugins.nvim-dap-virtual-text")
-
--- require("ali.plugins.vscode-colors")
+require("ali.plugins.onedark")
 -- require("ali.plugins.gruvbox")

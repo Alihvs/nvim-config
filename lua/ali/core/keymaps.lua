@@ -1,7 +1,6 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap
--- local opts = { noremap = true, silent = true }
 
 ---------------------
 -- General Keymaps
@@ -16,19 +15,19 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
--- Move lines of code in visual mode up and down
+-- move lines of code in visual mode up and down
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
--- Keep the cursor at the middle of screen when jumping half page up or down
+-- keep the cursor at the middle of screen when jumping half page up or down
 keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
 
--- Keep search terms in the middle
+-- keep search terms in the middle
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
 
--- Don't copy lines when deleting with DD
+-- don't copy lines when deleting with DD
 keymap.set("n", "DD", '"_dd"')
 
 -- When pasting in visual mode, don't copy the text that the paste happened on
@@ -45,6 +44,10 @@ keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
+
+-- saving and restoring folds
+keymap.set("n", "<leader>vs", "<cmd>mkview<CR>")
+keymap.set("n", "<leader>vl", "<cmd>loadview<CR>")
 
 ----------------------
 -- Plugin Keybinds

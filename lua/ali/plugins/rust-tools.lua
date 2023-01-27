@@ -16,6 +16,11 @@ rt.setup({
 			vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
 		end,
 	},
+	tools = {
+		hover_actions = {
+			auto_focus = true,
+		},
+	},
 	dap = {
 		adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path),
 	},

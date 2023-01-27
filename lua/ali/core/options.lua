@@ -30,3 +30,6 @@ opt.backspace = "indent,eol,start"
 
 -- share clipboard with os
 opt.clipboard = "unnamed"
+
+-- fold column width
+opt.foldcolumn = "auto:9"

@@ -31,9 +31,10 @@ lualine_nightfly.command = {
 -- configure lualine with modified theme
 lualine.setup({
 	options = {
-		theme = lualine_nightfly,
+		-- theme = lualine_nightfly,
 		-- theme = "vscode",
 		-- theme = "gruvbox",
+		theme = "onedark",
 		disabled_filetypes = { "packer", "NvimTree" },
 	},
 	sections = {
