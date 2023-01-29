@@ -57,7 +57,8 @@ keymap.set("n", "<leader>vl", "<cmd>loadview<CR>")
 keymap.set("n", "<leder>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- focus file explorer
+keymap.set("n", "<leader>ee", ":NvimTreeFocus<CR>") -- focus file explorer
+keymap.set("n", "<leader>et", ":NvimTreeToggle<CR>") -- focus file explorer
 
 -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
@@ -67,7 +68,7 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 keymap.set("n", "<leader>fd", "<cmd>Telescope current_buffer_fuzzy_find fuzzy=false case_mode=ignore_case<cr>") -- fuzzy find in current buffer
 
--- DiffView
+-- diffView
 keymap.set("n", "<leader>gg", ":DiffviewOpen<CR>")
 keymap.set("n", "<leader>gc", ":DiffviewClose<CR>")
 
