@@ -9,6 +9,11 @@ local keymap = vim.keymap
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
+-- select all
+keymap.set("n", "<C-a>", function()
+	vim.cmd("ggvg")
+end)
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
@@ -27,8 +32,12 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
 
--- don't copy lines when deleting with DD
-keymap.set("n", "DD", '"_dd"')
+-- don't cut lines when deleting or changing
+keymap.set("n", "DD", '"_dd')
+keymap.set("v", "D", '"_d')
+
+keymap.set({ "v", "n" }, "c", '"_c')
+keymap.set("n", "cc", '"_cc')
 
 -- When pasting in visual mode, don't copy the text that the paste happened on
 keymap.set("v", "p", '"_dp')
@@ -58,7 +67,7 @@ keymap.set("n", "<leder>sm", ":MaximizerToggle<CR>") -- toggle split window maxi
 
 -- nvim-tree
 keymap.set("n", "<leader>ee", ":NvimTreeFocus<CR>") -- focus file explorer
-keymap.set("n", "<leader>et", ":NvimTreeToggle<CR>") -- focus file explorer
+keymap.set("n", "<leader>et", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
