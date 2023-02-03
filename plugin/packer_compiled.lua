@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["leap.nvim"] = {
+    loaded = true,
+    path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/leap.nvim",
+    url = "https://github.com/ggandor/leap.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -285,6 +290,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
     url = "https://github.com/bluz71/vim-nightfly-guicolors"
+  },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
   },
   ["vim-surround"] = {
     loaded = true,
