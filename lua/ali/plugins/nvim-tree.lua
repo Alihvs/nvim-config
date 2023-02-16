@@ -15,7 +15,7 @@ vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 
 -- configure nvim-tree
 nvimtree.setup({
-	open_on_setup = true,
+	-- open_on_setup = true,
 	-- change folder arrow icons
 	renderer = {
 		highlight_git = false,
@@ -54,3 +54,10 @@ nvimtree.setup({
 		update_root = true,
 	},
 })
+
+local function open_nvim_tree()
+	-- open the tree
+	require("nvim-tree.api").tree.open()
+end
+
+vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })

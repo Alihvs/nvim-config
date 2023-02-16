@@ -112,6 +112,8 @@ return packer.startup(function(use)
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
+	use({ "f-person/git-blame.nvim" })
 
 	-- rust related plugins
 	use("simrat39/rust-tools.nvim")
@@ -122,15 +124,26 @@ return packer.startup(function(use)
 	use("leoluz/nvim-dap-go")
 	use("theHamsta/nvim-dap-virtual-text")
 
-	-- git related plugins
-	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
-	use({ "f-person/git-blame.nvim" })
-
 	-- quality of life plugins
 	use("lukas-reineke/indent-blankline.nvim")
 
 	-- Games
 	use("ThePrimeagen/vim-be-good")
+
+	-- ChatGPT
+	-- use({
+	-- 	"jackMort/ChatGPT.nvim",
+	-- 	config = function()
+	-- 		require("chatgpt").setup({
+	-- 			-- optional configuration
+	-- 		})
+	-- 	end,
+	-- 	requires = {
+	-- 		"MunifTanjim/nui.nvim",
+	-- 		"nvim-lua/plenary.nvim",
+	-- 		"nvim-telescope/telescope.nvim",
+	-- 	},
+	-- })
 
 	if packer_bootstrap then
 		require("packer").sync()
