@@ -18,7 +18,7 @@ nvimtree.setup({
 	-- open_on_setup = true,
 	-- change folder arrow icons
 	renderer = {
-		highlight_git = false,
+		highlight_git = true,
 		icons = {
 			glyphs = {
 				folder = {

@@ -34,8 +34,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-	-- use("Mofiqul/vscode.nvim") -- vscode coloerscheme
-	-- use("ellisonleao/gruvbox.nvim")
+	use("ellisonleao/gruvbox.nvim")
 	use("olimorris/onedarkpro.nvim")
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
@@ -43,6 +42,10 @@ return packer.startup(function(use)
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
 	use("mhinz/vim-startify")
+
+	use("ahmedkhalf/project.nvim") -- project switcher
+
+	use("RRethy/vim-illuminate") -- highlight the other occurances of the word under cursor
 
 	-- moving around faster
 	use("ggandor/leap.nvim")
@@ -115,6 +118,8 @@ return packer.startup(function(use)
 	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 	use({ "f-person/git-blame.nvim" })
 
+	-- use("tpope/vim-fugitive")
+
 	-- rust related plugins
 	use("simrat39/rust-tools.nvim")
 
@@ -129,6 +134,9 @@ return packer.startup(function(use)
 
 	-- Games
 	use("ThePrimeagen/vim-be-good")
+
+	-- using packer.nvim
+	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 
 	-- ChatGPT
 	-- use({

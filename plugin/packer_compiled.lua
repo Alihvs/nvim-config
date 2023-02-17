@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/ReplaceWithRegister",
     url = "https://github.com/vim-scripts/ReplaceWithRegister"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -128,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   harpoon = {
     loaded = true,
@@ -251,6 +261,11 @@ _G.packer_plugins = {
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["project.nvim"] = {
+    loaded = true,
+    path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/project.nvim",
+    url = "https://github.com/ahmedkhalf/project.nvim"
+  },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
@@ -280,6 +295,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/vim-be-good",
     url = "https://github.com/ThePrimeagen/vim-be-good"
+  },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/Users/alihavasi/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
   },
   ["vim-maximizer"] = {
     loaded = true,
